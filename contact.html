@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Makayla</title>
 </head>
 <body>
-  <header>
-    <h1>Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About</a> |
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+<h1>Contact Me</h1>
+<nav aria-label="Primary">
+<a href="index.html">Home</a> |
+<a href="about.html">About</a> |
+<a href="contact.html" aria-current="page">Contact</a>
+</nav>
+</header>
 
-  <main>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
+<main>
+<form>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
 
-      <label for="reason">Reason for Contact:</label>
-      <select id="reason" name="reason">
-        <option>Saying hi</option>
-        <option>Looking for a contractor</option>
-        <option>Interested in an interview</option>
-      </select>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" autocomplete="email" required>
 
-      <button type="submit">Submit</button>
-    </form>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Makayla Yeager</p>
-  </footer>
+<label for="reason">Reason for Contact:</label>
+<select id="reason" name="reason" required>
+<option value="">Select one…</option>
+<option value="hello">Saying hi</option>
+<option value="contractor">Looking for a contractor</option>
+<option value="interview">Interested in an interview</option>
+</select>
+
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="6" placeholder="Write your message…"></textarea>
+
+
+<button type="submit">Submit</button>
+</form>
+</main>
+
+
+<footer>
+<p>&copy; <time datetime="2025">2025</time> Makayla Yeager</p>
+</footer>
 </body>
 </html>
