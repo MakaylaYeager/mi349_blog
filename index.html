@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Makayla Yeager Blog</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -63,7 +70,6 @@
       </table>
     </article>
 
-    
     <article>
       <h2>My Go-To Study Tools</h2>
       <p><strong>Author:</strong> Makayla Yeager • 
@@ -74,7 +80,7 @@
 
       <p>
         When it comes to being a successful student, the tools you use every day can make a huge difference. 
-        For me, my laptop is the single most important tool. Its where I write essays, build projects, check 
+        For me, my laptop is the single most important tool. It’s where I write essays, build projects, check 
         emails, and stay connected with professors and classmates. I rely on software like Microsoft Word, 
         Excel, and Google Docs for writing and organizing data. Spotify playlists are another essential part of my 
         study routine because the right background music helps me stay focused for longer periods of time. 
@@ -90,9 +96,10 @@
 
     <section>
       <h2>Newsletter Signup</h2>
-      <form>
+      <form name="newsletter" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="newsletter">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" required>
         <button type="submit">Subscribe</button>
       </form>
     </section>
