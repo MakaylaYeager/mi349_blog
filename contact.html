@@ -16,25 +16,25 @@
 </header>
 
 <main>
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST" data-netlify="true" action="/success.html">
     <input type="hidden" name="form-name" value="contact">
 
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" autocomplete="email" required>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" autocomplete="email" required><br><br>
 
-    <label for="reason">Reason for Contact:</label>
+    <label for="reason">Reason for Contact:</label><br>
     <select id="reason" name="reason" required>
       <option value="">Select one…</option>
       <option value="hello">Saying hi</option>
       <option value="contractor">Looking for a contractor</option>
       <option value="interview">Interested in an interview</option>
-    </select>
+    </select><br><br>
 
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="6" placeholder="Write your message…"></textarea>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="6" placeholder="Write your message…"></textarea><br><br>
 
     <button type="submit">Submit</button>
   </form>
