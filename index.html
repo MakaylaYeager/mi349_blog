@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Makayla Yeager Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Makayla Yeager's MI349 blog featuring posts about student life, tools, and study plans." />
 </head>
 <body>
   <header>
     <h1>Makayla Yeager Blog</h1>
     <nav>
-      <a href="index.html" aria-current="page">Home</a> |
-      <a href="about.html">About</a> |
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -20,10 +21,11 @@
     <article>
       <h2>A Day in My Life at MSU</h2>
       <p><strong>Author:</strong> Makayla Yeager • 
-        <time datetime="2025-09-25">September 25, 2025</time>
+        <time datetime="2025-10-23">October 23, 2025</time>
       </p>
 
-      <img src="https://www.canr.msu.edu/contentAsset/image/8ce692dd0da1d952e735916284dca466/fileAsset/filter/Resize,Jpeg/resize_w/490/jpeg_q/70" alt="Michigan State University campus in the fall" width="400">
+      <img src="https://www.canr.msu.edu/contentAsset/image/8ce692dd0da1d952e735916284dca466/fileAsset/filter/Resize,Jpeg/resize_w/490/jpeg_q/70"
+           alt="Michigan State University campus in the fall">
 
       <p>
         Life as a senior at Michigan State University can be both busy and exciting. 
@@ -51,10 +53,11 @@
     <article>
       <h2>My Go-To Study Tools</h2>
       <p><strong>Author:</strong> Makayla Yeager • 
-        <time datetime="2025-09-25">September 25, 2025</time>
+        <time datetime="2025-09-25">October 23, 2025</time>
       </p>
 
-      <img src="https://www.notebookcheck.net/fileadmin/Notebooks/HP/Spectre_x360_13-ae048ng/IMG_018414.jpg" alt="My HP Spectre laptop" width="400">
+      <img src="https://www.notebookcheck.net/fileadmin/Notebooks/HP/Spectre_x360_13-ae048ng/IMG_018414.jpg"
+           alt="My HP Spectre laptop">
 
       <p>
         When it comes to being a successful student, the tools you use every day can make a huge difference. 
@@ -74,10 +77,10 @@
 
     <section>
       <h2>Newsletter Signup</h2>
-      <form name="newsletter" method="POST" data-netlify="true" netlify action="success.html">
-        <input type="hidden" name="form-name" value="newsletter">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <form name="newsletter" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="newsletter" />
+        <label for="nl-email">Email:</label>
+        <input type="email" id="nl-email" name="email" required />
         <button type="submit">Subscribe</button>
       </form>
     </section>
@@ -86,5 +89,18 @@
   <footer>
     <p>&copy; 2025 Makayla Yeager</p>
   </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector('form[name="newsletter"]');
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("🎉 Thank you for subscribing! Your form has been submitted successfully.");
+        form.reset();
+      });
+    }
+  });
+  </script>
 </body>
 </html>
